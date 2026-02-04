@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-emerald-50 text-gray-900">
@@ -8,7 +10,8 @@ export default function Home() {
           <div>
             <h1 className="text-2xl font-bold text-indigo-600">EchoRoom</h1>
             <p className="text-sm text-gray-600">
-              Ideas • Experiments • Reflection
+              Ideas • {" "}
+              <Link href="/experiments">Experiments </Link>{" "} • Reflection
             </p>
           </div>
           <span className="text-xs px-3 py-1 rounded-full bg-indigo-100 text-indigo-700">
